@@ -25,8 +25,6 @@ Graph-based anomaly detection models: IsolationForest, GNNs, GAEs, etc. are effe
 
 ## Architecture
 
-![Pipeline Architecture](assets/architecture.png)
-
 The pipeline runs in three phases:
 
 1. **Data Generation** — A synthetic financial transaction database (50,000 transactions, 2,005 users) is created in SQLite, with a planted fraud ring (users 2001–2005) for ground truth validation.
