@@ -35,17 +35,18 @@ The pipeline runs in three phases:
 
 ---
 
-## Results
+## Results 
+
+Note: Refer to docs/ for in depth analysis.
 
 The model flagged 21 users, successfully capturing all 5 planted fraud ring members. The explanation module then separated these into two categories:
 
 **Category 1 — True Positives:** Users with statistically extreme Z-scores (>3σ), flagged with clear quantitative evidence.
 
-![True Positive Report](assets/report_true_positive.png)
+
 
 **Category 2 — Ambiguous Positives:** Users flagged by the ML model due to rare feature *combinations*, but with no single extreme metric — allowing analysts to confidently deprioritize these.
 
-![Ambiguous Positive Report](assets/report_ambiguous.png)
 
 ---
 
