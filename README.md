@@ -2,11 +2,24 @@
 
 A proof-of-concept framework that adds a **post-hoc explanation layer** on top of graph-based anomaly detection (GAD) systems, addressing the "black box" problem that makes most GAD outputs unactionable for human analysts.
 
+Graph Based Anomaly Detection (GAD) leverages the structural properties of data to
+identify aberrations that traditional methodologies forego. However, the majority of these
+GAD models are “black boxes”, i.e., they fulfill their objective of anomaly detection,
+without offering any justification for their outputs. This lack of transparency is a
+significant problem in the adoption of this methodology in domains like finance,
+cybersecurity, etc, where accountability and understanding is a critical metric. This paper
+identifies this explainability gap and proposes a novel framework to address it. Our
+proposed approach functions as an explanation module, that upon receiving a flagged
+anomaly from any GAD model, queries the local subgraph of the entity from the database.
+It then performs a comparative analysis on the subgraph’s statistical properties against a
+baseline of normal entities. The final output is a human readable report explaining why the
+entity was deemed anomalous. This thereby enhances the accountability and utility of GAD
+systems in real world domains.
 ---
 
 ## Motivation
 
-Graph-based anomaly detection models — IsolationForest, GNNs, GAEs, etc. — are effective at flagging anomalies but offer no justification for their outputs. A fraud analyst handed a list of 21 suspicious user IDs has no idea where to begin. This project proposes a lightweight explanation module that sits *on top of* any existing GAD model and produces human-readable reports.
+Graph-based anomaly detection models: IsolationForest, GNNs, GAEs, etc. are effective at flagging anomalies but offer no justification for their outputs. A fraud analyst handed a list of 21 suspicious user IDs has no idea where to begin. This project proposes a lightweight explanation module that sits *on top of* any existing GAD model and produces human-readable reports.
 
 ---
 
