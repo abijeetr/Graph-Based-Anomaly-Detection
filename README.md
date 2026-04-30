@@ -1,8 +1,6 @@
 # User-Centric Explainable Anomaly Detection in Graph-Based Database Systems
 
-A proof-of-concept framework that adds a **post-hoc explanation layer** on top of graph-based anomaly detection (GAD) systems, addressing the "black box" problem that makes most GAD outputs unactionable for human analysts.
-
-Graph Based Anomaly Detection (GAD) leverages the structural properties of data to
+A proof-of-concept framework that adds a **post-hoc explanation layer** on top of graph-based anomaly detection (GAD) systems, addressing the "black box" problem that makes most GAD outputs unactionable for human analysts. raph Based Anomaly Detection (GAD) leverages the structural properties of data to
 identify aberrations that traditional methodologies forego. However, the majority of these
 GAD models are “black boxes”, i.e., they fulfill their objective of anomaly detection,
 without offering any justification for their outputs. This lack of transparency is a
@@ -15,6 +13,8 @@ It then performs a comparative analysis on the subgraph’s statistical properti
 baseline of normal entities. The final output is a human readable report explaining why the
 entity was deemed anomalous. This thereby enhances the accountability and utility of GAD
 systems in real world domains.
+
+
 ---
 
 ## Motivation
